@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang web của tôi</title>
+    <title>Chúc Mừng Ngày Phụ Nữ 20/10</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 50px;
+            color: #d81b60;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 24px;
+            color: #ad1457;
+            margin-bottom: 20px;
+            animation: slideIn 3s ease-in-out;
+        }
+        .decor {
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            background: url('https://i.imgur.com/kVTrVGS.png') no-repeat center/cover;
+            animation: spin 10s linear infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .flower {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            background: url('https://i.imgur.com/jk3hTci.png') no-repeat center/cover;
+            animation: float 5s ease-in-out infinite;
+        }
+        .flower1 { top: 10%; left: 20%; animation-duration: 6s; }
+        .flower2 { top: 40%; left: 80%; animation-duration: 7s; }
+        .flower3 { top: 60%; left: 30%; animation-duration: 8s; }
+        .flower4 { top: 80%; left: 60%; animation-duration: 9s; }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
 </head>
 <body>
-    <h1>Chào mừng!</h1>
-    <p>Đây là trang web đơn giản tôi tạo bằng GitHub Pages.</p>
+    <h1>Chúc Mừng Ngày Phụ Nữ 20/10</h1>
+    <div class="decor"></div>
+    <p>Chúc tất cả những người phụ nữ luôn xinh đẹp, mạnh khỏe, hạnh phúc và thành công!</p>
+    
+    <!-- Các họa tiết hoa trang trí -->
+    <div class="flower flower1"></div>
+    <div class="flower flower2"></div>
+    <div class="flower flower3"></div>
+    <div class="flower flower4"></div>
 </body>
 </html>
